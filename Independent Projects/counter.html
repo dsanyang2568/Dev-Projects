@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="counter.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons-container">
+        <div>
+          <button class="btn" type="button" id="countup" onclick="counterUp()">Count Up</button>
+        </div>
+        <div>
+          <button class="btn" type="button" id="countdown" onclick="counterDown()">Count Down</button>
+        </div>
+        <div>
+          <button class="btn" type="button" id="reset" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div class="display-container">
+        <div><p class="p01">Current count: </p> </div> 
+        <div id="counter-display"></div>
+      </div>
+    </div>
+
+    <script src="counter.js"></script>
+  </body>
+</html>

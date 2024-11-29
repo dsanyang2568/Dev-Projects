@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px 200px 20px 200px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Form Palindrome</h2> 
+      <p>
+        Write a JavaScript function named canFormPalindrome that checks if it is possible to
+        form a palindrome from the given input string by rearranging its letters. The function
+        should return true if forming a palindrome is possible, and false otherwise. A palindrome
+        is a word, phrase, number, or other sequences of characters that reads the same
+        forward and backward (ignoring spaces, punctuation, and capitalization). <br>
+        <br>
+        Visual Explanation of Right Rotation: <br>
+        Consider the array [1, 2, 3, 4, 5] and let's rotate it to the right by 2 steps. <br>
+        Initial Array: [1, 2, 3, 4, 5] <br>
+        After 1st Rotation: [5, 1, 2, 3, 4] <br>
+        The last element (5) moves to the front, and all other elements move one position to the
+        right. <br>
+        After 2nd Rotation: [4, 5, 1, 2, 3] <br>
+        Again, the new last element (4) moves to the front, and all other elements shift one
+        position to the right.
+      </p>
+      <p> function canFormPalindrome(str) { <br>
+        // Your code here <br> }
+      </p>
+      <p>Sample Input and Output: <br>
+        Input: "carrace" <br>
+        Output: true (Because "carrace" can be rearranged to "racecar", which is a palindrome.) <br>
+        Input: "hello" <br>
+        Output: false (Because there's no way to rearrange "hello" to form a palindrome.)
+      </p>
+    </div>
+
+
+    <script src="hard-q4.js"></script>
+  </body>
+</html>

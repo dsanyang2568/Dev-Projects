@@ -1,0 +1,20 @@
+
+// Easy-q5
+An empty array to put the differences
+variable = age Pairs[0][0] - age Pairs[0][1]
+age Difference = Math.abs(variable)
+push age Difference into the empty array
+sort the array in descending order and return [0] for the first element.
+
+// Medium-q1
+
+
+
+
+
+
+
+
+
+
+

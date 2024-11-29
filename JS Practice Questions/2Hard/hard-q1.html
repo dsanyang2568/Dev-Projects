@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px 200px 20px 200px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Merge and Format</h2> 
+      <p>
+        Write a JavaScript function named mergeAndFormat that takes two parameters: an
+        array of objects representing books, where each book has a title, author, and year
+        properties, and a string representing a format type ("string" or "object"). The function
+        should merge books with the same title and author but different years into a single entry.
+        The way the books are merged should depend on the format type specified: <br>
+        - If the format type is "string", the function should return an array of strings
+        formatted as "Title by Author (Years)", where "Years" is a comma-separated list of
+        years when the book was published. <br>
+        - If the format type is "object", the function should return an array of objects, each
+        object containing title, author, and a new property years which is an array of
+        years.
+      </p>
+      <p> function mergeAndFormat(books, format) { <br>
+        // Your code here <br> }
+      </p>
+      <p>Sample Input: <br> 
+        const books = [
+        { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year:
+        1925 },
+        { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year:
+        2020 },
+        { title: "1984", author: "George Orwell", year: 1949 },
+        { title: "1984", author: "George Orwell", year: 1983 }
+        ];
+        const format = "string";
+        mergeAndFormat(books, format)
+      </p>
+      <p>Sample Output: <br> 
+        [
+        "The Great Gatsby by F. Scott Fitzgerald (1925, 2020)",
+        "1984 by George Orwell (1949, 1983)"
+        ]
+      </p>
+      <p> function mergeAndFormat(books, format) { <br>
+        // Your code here <br> }
+      </p>
+      <p>Sample Input: <br> const books = [
+        { title: "To Kill a Mockingbird", author: "Harper Lee", year:
+        1960 },
+        { title: "To Kill a Mockingbird", author: "Harper Lee", year:
+        2015 },
+        { title: "Brave New World", author: "Aldous Huxley", year: 1932
+        },
+        { title: "The Catcher in the Rye", author: "J.D. Salinger", year:
+        1951 }
+        ];
+        const format = "object";
+        mergeAndFormat(books, format)
+      </p>
+      <p>Sample Output: <br> [
+        { title: "To Kill a Mockingbird", author: "Harper Lee", years:
+        [1960, 2015] },
+        { title: "Brave New World", author: "Aldous Huxley", years:
+        [1932] },
+        { title: "The Catcher in the Rye", author: "J.D. Salinger",
+        years: [1951] }
+        ]
+      </p>
+    </div>
+
+
+    <script src="hard-q1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="onlinequiz.css">
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="div01"><p>Online Quiz</p></div>
+      <div class="div02">
+        <!-- <form action="onlinequizsubmit.html"> -->
+          <ol class="options">
+            <li id="question1">What is the capital of New Mexico?</li>
+            <label for="ans1a"><input type="radio" name="choice1" id="ans1a" onclick="removeErrorMessage()" value="Roswell">Roswell <span id="checkmarka"></span></label>
+            <label for="ans1b"><input type="radio" name="choice1" id="ans1b" onclick="removeErrorMessage()" value="Albuquerque">Albuquerque <span id="checkmarkb"></span></label>         
+            <label for="ans1c"><input type="radio" name="choice1" id="ans1c" onclick="removeErrorMessage()" value="New Mexico City">New Mexico City <span id="checkmarkc"></span></label>          
+            <label for="ans1d"><input type="radio" name="choice1" id="ans1d" onclick="removeErrorMessage()" value="Santa Fe">Santa Fe <span id="checkmarkd"></span></label>          
+            <li id="question2">What is considered the highest mountain in the world?</li>          
+            <label for="ans2a"><input type="radio" name="choice2" id="ans2a" onclick="removeErrorMessage()" value="Mount Rossmore">Mount Rossmore</label>      
+            <label for="ans2b"><input type="radio" name="choice2" id="ans2b" onclick="removeErrorMessage()" value="The Alps">The Alps</label>      
+            <label for="ans2c"><input type="radio" name="choice2" id="ans2c" onclick="removeErrorMessage()" value="Mount Everest">Mount Everest</label>          
+            <label for="ans2d"><input type="radio" name="choice2" id="ans2d" onclick="removeErrorMessage()" value="Mount Kilimanjaro">Mount Kilimanjaro</label>
+            <li id="question3">What is the name of our solar system?</li>
+            <label for="ans3a"><input type="radio" name="choice3" id="ans3a" onclick="removeErrorMessage()" value="Virgo">Virgo</label>
+            <label for="ans3b"><input type="radio" name="choice3" id="ans3b" onclick="removeErrorMessage()" value="Milky Way">Milky Way</label>
+            <label for="ans3c"><input type="radio" name="choice3" id="ans3c" onclick="removeErrorMessage()" value="Andromeda">Andromeda</label>
+            <label for="ans3d"><input type="radio" name="choice3" id="ans3d" onclick="removeErrorMessage()" value="Laniakea">Laniakea</label>
+            <li id="question4">What is the third planet from the Sun?</li>
+            <label for="ans4a"><input type="radio" name="choice4" id="ans4a" onclick="removeErrorMessage()" value="Earth">Earth</label>          
+            <label for="ans4b"><input type="radio" name="choice4" id="ans4b" onclick="removeErrorMessage()" value="Moon">Moon</label>          
+            <label for="ans4c"><input type="radio" name="choice4" id="ans4c" onclick="removeErrorMessage()" value="Mars">Mars</label>          
+            <label for="ans4d"><input type="radio" name="choice4" id="ans4d" onclick="removeErrorMessage()" value="Neptune">Neptune</label>
+            <li id="question5">What is the name of the nearest star system after the Sun?</li>
+            <label for="ans5a"><input type="radio" name="choice5" id="ans5a" onclick="removeErrorMessage()" value="Andromeda">Andromeda</label>          
+            <label for="ans5b"><input type="radio" name="choice5" id="ans5b" onclick="removeErrorMessage()" value="Krypton">Krypton</label>          
+            <label for="ans5c"><input type="radio" name="choice5" id="ans5c" onclick="removeErrorMessage()" value="Alpha Centauri">Alpha Centauri</label>          
+            <label for="ans5d"><input type="radio" name="choice5" id="ans5d" onclick="removeErrorMessage()" value="Messier 87">Messier 87</label>
+            <li id="question6">How many colors are in the rainbow?</li>
+            <label for="ans6a"><input type="radio" name="choice6" id="ans6a" onclick="removeErrorMessage()" value="No one knows">No one knows</label>
+            <label for="ans6b"><input type="radio" name="choice6" id="ans6b" onclick="removeErrorMessage()" value="6">6</label>
+            <label for="ans6c"><input type="radio" name="choice6" id="ans6c" onclick="removeErrorMessage()" value="7">7</label>
+            <label for="ans6d"><input type="radio" name="choice6" id="ans6d" onclick="removeErrorMessage()" value="8">8</label>
+            <li id="question7">What is the fastest on land mammal?</li>
+            <label for="ans7a"><input type="radio" name="choice7" id="ans7a" onclick="removeErrorMessage()" value="Peregrine Falcon">Peregrine Falcon</label> 
+            <label for="ans7b"><input type="radio" name="choice7" id="ans7b" onclick="removeErrorMessage()" value="Gazelle">Gazelle</label>
+            <label for="ans7c"><input type="radio" name="choice7" id="ans7c" onclick="removeErrorMessage()" value="Tiger">Tiger</label>
+            <label for="ans7d"><input type="radio" name="choice7" id="ans7d" onclick="removeErrorMessage()" value="Cheetah">Cheetah</label>
+            <li id="question8">According to Science, why can't any entity travel faster than speed of light?</li>
+            <label for="ans8a"><input type="radio" name="choice8" id="ans8a" onclick="removeErrorMessage()" value="Laws of Physics are a joke">Laws of Physics are a joke</label>
+            <label for="ans8b"><input type="radio" name="choice8" id="ans8b" onclick="removeErrorMessage()" value="Light has no weight">Light has no weight</label>          
+            <label for="ans8c"><input type="radio" name="choice8" id="ans8c" onclick="removeErrorMessage()" value="Entities grow old">Entities grow old</label>          
+            <label for="ans8d"><input type="radio" name="choice8" id="ans8d" onclick="removeErrorMessage()" value="Light has no speed">Light has no speed</label>
+            <li id="question9">Approximately, what percentage of Earth is covered by water?</li>
+            <label for="ans9a"><input type="radio" name="choice9" id="ans9a" onclick="removeErrorMessage()" value="67 %">67 %</label>
+            <label for="ans9b"><input type="radio" name="choice9" id="ans9b" onclick="removeErrorMessage()" value="50 %">50 %</label>
+            <label for="ans9c"><input type="radio" name="choice9" id="ans9c" onclick="removeErrorMessage()" value="84 %">84 %</label>
+            <label for="ans9d"><input type="radio" name="choice9" id="ans9d" onclick="removeErrorMessage()" value="70 %">70 %</label>
+            <li id="question10">What percentage of the atmosphere is nitrogen gas?</li>
+            <label for="ans10a"><input type="radio" name="choice10" id="ans10a" onclick="removeErrorMessage()" value="0.04 %">0.04 %</label>
+            <label for="ans10b"><input type="radio" name="choice10" id="ans10b" onclick="removeErrorMessage()" value="98 %">98 %</label>          
+            <label for="ans10c"><input type="radio" name="choice10" id="ans10c" onclick="removeErrorMessage()" value="78 %">78 %</label>
+            <label for="ans10d"><input type="radio" name="choice10" id="ans10d" onclick="removeErrorMessage()" value="55 %">55 %</label>
+          </ol>
+          <div class="div03">
+            <div><input class="submit" type="submit" value="Submit" id="submit" onclick="submit()"></div>
+            <div id="submit-message"></div>              
+          </div>
+        <!-- </form> -->
+      </div>
+    </div>
+
+    <script src="onlinequiz.js"></script>
+    <script src="onlinequizsubmit.js"></script>
+
+  </body>
+</html>

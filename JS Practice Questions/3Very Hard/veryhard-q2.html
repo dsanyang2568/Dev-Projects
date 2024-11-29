@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px 200px 20px 200px;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Traverse maze</h2> 
+      <p>
+        You are given a 2D grid representing a maze, where: <br>
+        <br>
+        ● 'S' represents the starting point. <br>
+        ● 'F' represents the finish point. <br>
+        ● '.' represents an open path that can be traveled. <br>
+        ● '#' represents a wall that cannot be passed through. <br>
+        <br>
+        Write a JavaScript function named canTraverseMaze that takes two arguments: a 2D
+        grid (array of strings) representing the maze, and a string of directions to attempt to
+        traverse the maze. The directions are given as a string consisting of the letters 'N'
+        (north), 'S' (south), 'E' (east), and 'W' (west). The function should return true if the
+        directions lead from the start to the finish point without running into walls or going out of
+        bounds, and false otherwise.
+      </p>
+      <p> function canTraverseMaze(maze, directions) { <br>
+        // Your code here <br> }
+      </p>
+      <p>Sample Input 1: <br> 
+        const maze = [
+          "S.#",
+          "...",
+          "..F"
+        ];
+        const directions = "SEES";
+        canTraverseMaze(maze, directions)
+      </p>
+      <p>Sample Output 1: <br> 
+        true
+      </p>
+      <p>Sample Input 2: <br> 
+        const maze = [
+          "S.#",
+          "...",
+          "..F"
+        ];
+        const directions = "SSS";
+        canTraverseMaze(maze, directions)
+      </p>
+      <p>Sample Output 2: <br> 
+        false
+      </p>
+    </div>
+
+
+    <script src="veryhard-q2.js"></script>  
+  </body>
+</html>

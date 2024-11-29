@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta device-width, initial-scale="1.0">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" href="javascriptcalculator.css">  
+</head>
+<body>
+  <div class="div-page">
+    <div class="header-div"><h2>JavaScript Calculator</h2></div>
+    <div class="calculatoroutline">
+      <div class="resultdiv">
+        <span class="result-text"></span>
+      </div>
+      <div class="arithmetics">
+        <button class="arithmeticbuttons" onclick="onOperationPressed('+')">+</button>
+        <button class="arithmeticbuttons" onclick="onOperationPressed('-')">-</button>
+        <button class="arithmeticbuttons" onclick="onOperationPressed('x')">x</button>
+        <button class="arithmeticbuttons" onclick="onOperationPressed('/')">/</button>
+      </div>
+      <div class="numbersoutline">        
+        <div class="numbersbutton">
+          <button onclick="onNumberPressed(7)">7</button>
+          <button onclick="onNumberPressed(8)">8</button>
+          <button onclick="onNumberPressed(9)">9</button>
+          <button onclick="onNumberPressed(4)">4</button>
+          <button onclick="onNumberPressed(5)">5</button>
+          <button onclick="onNumberPressed(6)">6</button>
+          <button onclick="onNumberPressed(1)">1</button>
+          <button onclick="onNumberPressed(2)">2</button>
+          <button onclick="onNumberPressed(3)">3</button>
+          <button onclick="onNumberPressed(0)">0</button>
+          <button onclick="onNumberPressed('.')">.</button>
+          <button onclick="onOperationPressed('c')">C</button>
+        </div>
+        <div class="equalsdiv">
+          <button class="equalsignbutton" onclick="onOperationPressed('=')">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="javascriptcalculator.js"></script>
+</body>
+</html>

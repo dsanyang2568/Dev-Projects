@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>demo</title>
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Webpage</h1>
+    </header>
+    <!-- Semantic element nav-->
+    <nav class="nav1">This is a nav bar =>
+      <a href="/home">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div>
+      <p>This a paragraph tag</p>
+      <h1>This a heading tag.</h1>
+      <h2>This a h2 tag. They run from h1, the largest to h6, the smallest.</h2>
+      <div>This is an anchor tag with target =  to underscore blank for new tab =>
+        <a href="https://www.google.com" target="_blank">Click me!</a>
+      </div>
+      <div> Copy image address for web sourcing
+        <img src="/Images/Riddles-About-Dog.webp" width="200" alt="Image of two puppies"/>
+      </div>
+      <div> 
+        Use Semantic tag such as header, nav, section, article, p, figure, aside, footer for accessbility for screen readers.
+      </div>
+    </div>
+    <section>
+      <article>
+        <header>
+          <h3>My First Blog Post header</h3>
+        </header>
+        <summary>
+          <p>This is the summary of this article</p>
+        </summary>
+        <figure>
+          <div class="semantic-model">
+            <img src="Images/Semantic-html-model.png" alt="Sementic tags for screen readers"/>
+            <figcaption>Fig. 1 Semantic Model</figcaption>
+          </div>
+          <div class="div-semantic">
+            <img src="Images/Semantic-html.png" alt="Sementic tags for screen readers"/>
+            <figcaption>Fig. 2 Div versus the Semantic Model</figcaption>            
+          </div>
+        </figure>
+        <p>This is my blog post I am just <mark>testing</mark> things out</p>
+      </article>
+      <article>
+        <header>
+          <h3>My Second Blog Post</h3>
+        </header>
+        <p>This is my blog post I am just testing things out</p>
+      </article>
+      <dl> <!--description list-->        
+        <dt>HTML</dt> <!--term-->       
+        <dd>Hyper Text Markup Language.</dd> <!--value for the term -->
+        <dd>Structure for the page.</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+        <dd>Decoration for html tags.</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+        <dd>For functionality</dd>
+      </dl>
+    </section>
+    <div>
+      <table> <!--table structure, head, body and foot-->
+        <caption>
+          Players and their favorite sport
+        </caption>
+        <thead>     
+          <th>Sports Table</th> <!--table header--> 
+          <th>First Name</th> <!--also: <th colspan="2">Name</th> to merge first and last name-->          
+          <th>Last Name</th>
+          <th>Favorite Sport</th>
+        </thead>
+        <tbody>
+          <tr> <!--table row-->            
+            <td>Player 1</td><!--table data-->
+            <td>Lamin</td>
+            <td>Sanyang</td>
+            <td>Soccer</td>
+          </tr>
+          <tr> <!--table row-->  
+            <td>Player 2</td>
+            <td>Jim</td>
+            <td>Smith</td>
+            <td>Basketball</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><!--table row-->            
+            <th></th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Sport</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div>
+      <form action="" method="">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username"/><br/>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"/><br/>
+        <p>Please indicate your favorite language.</p>
+        <input type="radio" name="favorite_language" value="HTML" id="html"/>
+        <label for="html">HTML</label> <br/>
+        <input type="radio" name="favorite_language" value="CSS" id="html"/>
+        <label for="html">CSS</label> <br/>
+        <input type="radio" name="favorite_language" value="Javascript" id="javascript"/>
+        <label for="javascript">JavaScript</label><br/>
+        <input type="date" /><br/>
+        <input type="file" /><br/>
+        <input type="submit" /> <!--url bar shows query parameter after the ?-->
+      </form>
+    </div>
+    <section id="grocery-list1">
+      <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Butter</li>
+        <ul>
+          <li>Bread</li>
+          <li>Cookies</li>
+        </ul>
+      </ul>
+    </section>
+    <section id="grocery-list2">
+      <ol>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Bread</li>
+        <ol>
+          <li>Wheat</li>
+          <li>White</li>
+        </ol>
+      </ol>
+    </section>
+    <div class="div-span1">
+      <span class="text1">Hello</span>
+      <span class="text1">World</span>
+    </div>
+    <div class="positioning-container">
+      <div class="circle1">Sticky Container</div>
+      <div class="circle2">40px to the bottom of the containing block</div>
+    </div>
+
+    <footer>
+      <p>Copyright 2024</p>
+    </footer>
+    <!-- <script src="demo.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pass Generator</title>
+    <link rel="stylesheet" href="randompassgenerator.css">    
+  </head>
+  <body>
+    <form class="center">
+      <div class="div01">
+        <div>
+          <h2>Generate a random password</h2>
+        </div>
+        <div class="password-container">
+          <div>
+            <label for="password-length">Password Length:</label>
+            <input class="password-length" type="number" 
+              id="password-length" name="password-length">            
+          </div>
+          <div id="password-length-errors"></div>
+        </div>
+        <div>
+          <div class="div02">
+            <p class="p01">Select password properties</p>
+            <p>For excellence, set length to at least 12 and select all check boxes.</p>
+            <div id="checkbox-message"></div>        
+          </div>
+          <div class="check-property">
+            <input class="checkbox" type="checkbox" id="upperCheckbox" name="upperCheckbox">
+            <label for="upperCheckbox">Upper case (A - Z)</label> 
+          </div>
+          <div class="check-property">
+            <input class="checkbox" type="checkbox" id="lowerCheckbox" name="lowerCheckbox">
+            <label for="lowerCheckbox">Lower case (a - z)</label>
+          </div>
+          <div class="check-property">
+            <input class="checkbox" type="checkbox" id="numberCheckbox" name="numberCheckbox">
+            <label for="numberCheckbox">Numbers (0 - 9)</label>
+          </div>
+          <div class="check-property">
+            <input class="checkbox" type="checkbox" id="specialCheckbox" name="specialCheckbox">
+            <label for="specialCheckbox">Special characters (!, @, #, $, &, etc.)</label>            
+          </div>          
+        </div>
+        <div>
+          <button class="generate-button" type="button" onclick="generatePassword()">Generate Password</button>
+        </div>
+        <div class="div03">
+          <p>Generated Password: <span class="generated-password" id="generated-password">None</span></p>
+        </div>
+      </div>
+    </form>
+
+    <script src="randompassgenerator.js"></script>
+  </body>
+</html>

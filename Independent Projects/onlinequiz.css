@@ -1,0 +1,65 @@
+body {
+  margin: 10px 200px 50px 100px;
+  background-color: rgb(246, 249, 252);
+}
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  /* border: 1px solid red; */
+}
+.div01 {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: -35px;
+}
+.div02 {
+  margin-top: -40px;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+}
+li {
+  font-weight: bold;
+}
+label {
+  width: fit-content;
+  /* border: 1px solid red; */
+}
+input[type=radio] {  
+  /* height: 14px;
+  width: 14px; */
+  transform: scale(1.2);
+  margin-left: 15px;
+  margin-right: 8px;
+}
+#checkmarka {
+  color: green;
+  font-size: large;
+  font-weight: bold;
+}
+ .div03 {
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 400px;
+ }
+ .submit {
+  height: 30px;
+  width: 85px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+ }
+ #submit-message {
+  color: red;
+  font-weight: 900;
+  margin-top: 2px;
+  margin-left: 20px;
+ }
+
+
+
+

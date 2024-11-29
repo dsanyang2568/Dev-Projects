@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px 200px 20px 200px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Rotate array</h2> 
+      <p>
+        Write a JavaScript function named rotateArray that takes two parameters: an array of
+        integers arr and a non-negative integer k, which represents the number of times the
+        array elements should be rotated to the right. The function should rotate the array
+        in-place, meaning you should modify the array directly without using extra space for
+        another array. After performing the rotation, the function doesn't need to return anything.
+        In the context of an array, "rotation" refers to moving the elements of the array around to
+        new positions according to a specific rule. When we talk about rotating an array to the
+        right (or clockwise), it means that each element is moved to the next position in the
+        array, and the last element moves to the first position. This process is repeated a
+        specified number of times (k times, in our case). <br>
+        <br>
+        Visual Explanation of Right Rotation: <br>
+        Consider the array [1, 2, 3, 4, 5] and let's rotate it to the right by 2 steps. <br>
+        Initial Array: [1, 2, 3, 4, 5] <br>
+        After 1st Rotation: [5, 1, 2, 3, 4] <br>
+        The last element (5) moves to the front, and all other elements move one position to the
+        right. <br>
+        After 2nd Rotation: [4, 5, 1, 2, 3] <br>
+        Again, the new last element (4) moves to the front, and all other elements shift one
+        position to the right.
+      </p>
+      <p> function rotateArray(arr, k) { <br>
+        // Your code here <br> }
+      </p>
+      <p>Sample Input: <br> rotateArray([1, 2, 3, 4, 5, 6, 7], 3);</p>
+      <p>Sample Output: <br> [5, 6, 7, 1, 2, 3, 4] </p>
+    </div>
+
+
+    <script src="medium-q4.js"></script>
+  </body>
+</html>

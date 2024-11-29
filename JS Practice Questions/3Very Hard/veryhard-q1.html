@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px 200px 20px 200px;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Find unique index pairs</h2> 
+      <p>
+        Implement a JavaScript function named findUniqueIndexPairs that, given an array of
+        integer numbers and a target sum targetSum, identifies all pairs of indices whose values
+        sum up to the target sum. Each pair of indices should be unique and returned as an
+        array of pairs, with each pair represented as a two-element array. The function must
+        ensure that: <br>
+        <br>
+        ● The sum of the values at the two indices in each pair equals the target sum. <br>
+        ● Each index from the array is used at most once across all pairs. <br>
+        ● The pairs are unique; there are no duplicate pairs in the output. <br>
+        ● The order of pairs or indices in the output does not matter. <br> 
+        <br>
+        Constraints: <br>
+        ● The array may contain both positive and negative integers. <br>
+        ● The function should correctly handle cases with duplicate values in the input
+        array. <br>
+        ● If no pairs match the criteria, the function should return an empty array. <br>
+        ● Indices in a pair should be listed in ascending order (i.e., [i, j] where i < j). <br>
+        <br>
+        Note: It is possible to have different valid answers depending on the set of unique pairs
+        that was chosen by your solution.
+      </p>
+      <p> function findUniqueIndexPairs(numbers, targetSum) { <br>
+        // Your code here <br> }
+      </p>
+      <p>Sample Input 1: <br> 
+        const numbers = [2, 4, -2, 1, 0, 5, -4];
+        const targetSum = 3;
+        findUniqueIndexPairs(numbers, targetSum)
+      </p>
+      <p>Sample Output 1: <br> 
+        [
+          [0, 3], // 2 + 1 = 6
+          [2, 5], // -2 + 5 = 3
+          // Note: No more pairs can be formed without reusing indices.
+        ]
+      </p>
+      <p>Sample Input 2: <br> 
+        const numbers = [1, 2, 3, 4, 5];
+        const targetSum = 9;
+        findUniqueIndexPairs(numbers, targetSum)
+      </p>
+      <p>Sample Output 2: <br> 
+        [
+          [3, 4] // 4 + 5 = 9
+          // only one pair meets the criteria without reusing indices.
+        ]
+      </p>
+    </div>
+    
+
+    <script src="veryhard-q1.js"></script>
+  </body>
+</html>

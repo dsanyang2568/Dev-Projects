@@ -1,0 +1,109 @@
+body {
+	font-family: Roboto, Arial, Helvettica, sans-serif;
+	background-color: rgb(255, 255, 255);
+	min-width: 1175px;
+	/*margin: 0px; To use the entire page layout.*/
+  margin: 0px 100px 0px 100px;
+
+}
+/* p {font-size: 16px;} */
+
+a {
+	font-size: 19px; 
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+.nav1 {
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	width: 360px;
+	margin-top: 10px 0px 10px 0px;
+	/* border: 1px solid black; */
+}
+
+h4 {
+	font-size: 20px;
+	margin-top: 4px;
+	margin-bottom: 3px;
+}
+h5 {font-size: 18px;}
+figure {
+	display: flex;
+}
+.semantic-model {
+	width: 480px;
+}
+.div-semantic {
+	width: 550px;
+	margin-left: 50px;
+	padding-top: 100px;
+}
+input {
+	margin-top: 5px;
+}
+td, th, table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* px, em relative to font-size, rem relative browser font-size,
+ % percent of viewport, vw, vh viewport percentage width & height*/
+#grocery-list1 {
+	background-color: yellow;
+	width: 50%;
+}
+#grocery-list1 li {
+	background-color: green;
+	width: 50%;
+}
+#grocery-list2 {
+	background-color: yellow;
+	width: 50%;
+}
+#grocery-list2 li {
+	background-color: green;
+	width: 38vw;
+	height: 3vh;
+}
+.text1 {
+	font-size: 35px;
+	margin: 5px;
+	padding: 2px;
+	background-color: green;
+}
+section {
+	border: 1px solid black;
+}
+div {
+	margin: 10px 0px 10px 0px; 
+	border: 1px solid black;
+}
+.display-p1 {
+	height: 50px;
+	margin: 5px 0px 5px 0px;
+}
+.div-span1 {
+	height: 44px;
+}
+.positioning-container {
+	background-color: aqua;
+	position: sticky;
+	bottom: 40px;
+	height: 130px;
+	width: 20%;
+	margin-top: 10px;
+	margin-left: 1190px;
+}
+
+footer {
+	font-weight: 700;
+	margin: 10px 0px 20px 600px;
+}
+
+
+
+

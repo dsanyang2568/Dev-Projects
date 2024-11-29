@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px 200px 20px 200px;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>LRU Cache</h2> 
+      <p>
+        Implement a class LRUCache that represents a Least Recently Used (LRU) cache with
+        a maximum capacity. The cache should support two operations: <br>
+        <br>
+        1. get(key): Gets the value of the key if the key exists in the cache, otherwise
+        returns -1. <br>
+        2. set(key, value): Sets or inserts the value if the key is not already present. When
+        the cache reaches its capacity, it should invalidate the least recently used item
+        before inserting the new item. <br>
+        The cache must operate in O(1) time complexity for both set and get operations. <br>
+        <br>
+        Constraints: <br>
+        ● The cache should have a fixed size set at initialization. <br>
+        ● All keys and values are integers. <br>
+        <br>
+        Use object oriented programming to solve this question.
+      </p>
+      <p>Sample Code: <br>
+        class LRUCache { <br>
+        constructor(capacity) { <br>
+        } <br> <br>
+        get(key) { <br>
+        // TODO: Implement the method to retrieve a value from the
+        cache. <br>
+        } <br> <br>
+        set(key, value) { <br>
+        // TODO: Implement the method to add or update a value in the
+        cache. <br>
+        }
+        } <br>
+      </p>
+      <p>Sample Usage: <br> 
+        // Usage Example <br>
+        const cache = new LRUCache(2); <br>
+        cache.set(1, 1); // Cache is {1=1} <br>
+        cache.set(2, 2); // Cache is {1=1, 2=2} <br>
+        console.log(cache.get(1)); // returns 1 <br>
+        cache.set(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3} <br>
+        console.log(cache.get(2)); // returns -1 (not found) <br>
+        cache.set(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3} <br>
+        console.log(cache.get(1)); // returns -1 (not found) <br>
+        console.log(cache.get(3)); // returns 3 <br>
+        console.log(cache.get(4)); // returns 4
+      </p>      
+    </div>
+
+
+    <script src="veryhard-q5.js"></script>
+  </body>
+</html>

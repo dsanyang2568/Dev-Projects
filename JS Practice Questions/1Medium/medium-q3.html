@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px 200px 20px 200px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Update employee salary</h2> 
+      <p>
+        Write a JavaScript function named updateEmployeeSalary that takes three parameters:
+        an array of employee objects, an employee ID, and a new salary value. Each employee
+        object will have the following structure:
+      </p>
+      <p> { <br>
+          id: Number, <br>
+          name: String, <br>
+          position: String, <br>
+          salary: Number, <br>
+          department: { <br>
+          name: String, <br>
+          location: String }
+        <br> }
+      </p>
+      <p>
+        The function should update the salary of the employee with the specified ID to the 
+        new salary value provided. If the employee ID does not exist in the array, the 
+        function should return null. After updating the salary, return the updated employee object.
+      </p>
+      <p> function updateEmployeeSalary(employees, employeeId, newSalary) { <br>
+        // Your code here <br> }
+      </p>
+      <p>Sample Input: <br> const employees = [
+        { id: 1, name: "John Doe", position: "Software Engineer", salary:
+        70000, department: { name: "Engineering", location: "New York" } },
+        { id: 2, name: "Jane Smith", position: "Product Manager", salary:
+        80000, department: { name: "Product", location: "San Francisco" } }
+        ];
+        updateEmployeeSalary(employees, 1, 75000);</p>
+      <p>Sample Output: <br> {
+        id: 1,
+        name: "John Doe",
+        position: "Software Engineer",
+        salary: 75000,
+        department: { name: "Engineering", location: "New York" }
+        }
+      </p>
+    </div>
+
+
+    <script src="medium-q3.js"></script>
+  </body>
+</html>

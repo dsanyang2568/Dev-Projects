@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px 200px 20px 200px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Filter and transform</h2> 
+      <p>
+        Write a JavaScript function named filterAndTransform that takes an array of objects 
+        and performs both filtering and transformation on the data. Each object in the array
+        represents a person with the following properties: name, a string; age, a number; and
+        hobby, a string. The function should: <br>
+        <br>
+        1. Filter out any person who is under 18 years old. <br>
+        2. Transform the remaining objects into strings formatted as "<Name> is <Age> <br>
+        years old and loves <Hobby>." <br>
+        Return an array containing these formatted strings.
+      </p>
+      <p> function filterAndTransform(people) { <br>
+        // Your code here <br> }
+      </p>
+      <p>Sample Input: <br> 
+        const people = [
+        { name: "Alice", age: 25, hobby: "painting" },
+        { name: "Bob", age: 17, hobby: "coding" },
+        { name: "Charlie", age: 32, hobby: "cycling" },
+        { name: "Dave", age: 15, hobby: "gardening" }
+        ];
+        filterAndTransform(people)</p>
+      <p>Sample Output: <br> 
+        [
+        "Alice is 25 years old and loves painting.",
+        "Charlie is 32 years old and loves cycling."
+        ]
+      </p>
+    </div>
+
+
+    <script src="hard-q2.js"></script>
+  </body>
+</html>

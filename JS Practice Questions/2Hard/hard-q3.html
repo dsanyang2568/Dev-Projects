@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px 200px 20px 200px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Compress string</h2> 
+      <p>
+        Write a JavaScript function named compressString that takes a string as its argument
+        and returns a compressed version of the string following these rules:
+        - For each group of consecutive identical characters in the input string, replace
+        that group with a single instance of the character followed by the number of times
+        it appears consecutively. <br>
+        - If a character appears only once consecutively, just include the character without
+        a number following it. <br>
+        - The function should handle any ASCII character. <br>
+        The goal is to implement a basic form of string compression for sequences of identical
+        characters.
+      </p>
+      <p> function compressString(str) { <br>
+        // Your code here <br> }
+      </p>
+      <p>Sample Input and Output: <br>
+        Input: "aaabbc" <br>
+        Output: "a3b2c" <br>
+        Input: "aabbaabb" <br>
+        Output: "a2b2a2b2" <br>
+        Input: "abcd" <br>
+        Output: "abcd" (since compressing does not reduce the string's size) <br>
+        Input: "wwwwaaadexxxxxx <br>
+        Output: "w4a3dex6"
+      </p>
+    </div>
+
+
+    <script src="hard-q3.js"></script>
+  </body>
+</html>

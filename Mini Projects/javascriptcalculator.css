@@ -1,0 +1,74 @@
+body {
+  margin-left: 300px;
+}
+.header-div {
+  margin-top: 50px;
+}
+.calculatoroutline {
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 365px;
+  border: 2px solid green;
+}
+.resultdiv {
+  height: 30px;
+  width: 330px;
+  margin: 10px 15px 10px 12px;
+  padding: 5px;
+  border: 1px solid gray;
+  font-size: 28px;
+  text-align: right;
+}
+.arithmetics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  width: 345px;
+  margin-left: 12px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.arithmeticbuttons {
+  background-color: darkgray;
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+  margin: 0px 4px 10px 0px;
+  border: 1px solid gray;
+}
+.arithmeticbuttons:hover {
+  opacity: 80%;
+}
+button {
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+  margin: 0px 3px 10px 0px;
+}
+.numbersoutline {
+  display: flex;  
+  width: 355px;  
+  padding: -5px 0px 0px 0px;
+  margin-left: 12px;
+  /* border: 2px solid green; */
+}
+.numbersbutton {
+  display: inline-block;
+  width: 258px;
+  height: 200px;
+  align-items: center;  
+  padding: 0px;
+  margin: 1px;
+  /* border: 2px solid red; */
+}
+.equalsdiv {
+  height: 200px;
+  margin: 0px;
+  /* border: 2px solid blue; */
+}
+.equalsignbutton {
+  height: 191px;
+  margin-left: 1px;
+}
